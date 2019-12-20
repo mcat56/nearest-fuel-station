@@ -8,6 +8,8 @@ describe 'as a user I can find the nearest charging station', :vcr do
     select 'Turing', from: :location
     click_on 'Find Nearest Station'
 
+    save_and_open_page
+
     expect(current_path).to eq('/search')
 
     expect(page).to have_content('Name: ')
