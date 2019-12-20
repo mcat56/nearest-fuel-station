@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 
-describe 'as a user I can find the nearest charging station' do
+describe 'as a user I can find the nearest charging station', :vcr do
   it 'searching from the root page' do
     visit '/'
 
