@@ -4,7 +4,6 @@ class DirectionsFacade
     @location = location
   end
 
-
   def travel_time
     get_directions['routes'].first['legs'].first['duration']['text']
   end
