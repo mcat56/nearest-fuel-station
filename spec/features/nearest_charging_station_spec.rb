@@ -14,8 +14,8 @@ describe 'as a user I can find the nearest charging station' do
     expect(page).to have_content('Address: ')
     expect(page).to have_content('Fuel Type: ')
     expect(page).to have_content('Access Times: ')
-    expect(page).to have_content('Distance to Nearest Station: 0.1 miles ')
-    expect(page).to have_content('Travel Time: 1 minute')
+    expect(page).to have_content('Distance to Nearest Station: 0.1 mi')
+    expect(page).to have_content('Travel Time: 1 min')
     expect(page).to have_content('Head southeast on 17th St toward Larimer St')
 
   end
